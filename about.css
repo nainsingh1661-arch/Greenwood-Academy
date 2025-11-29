@@ -1,0 +1,293 @@
+/* --- About Page Specific Styles (about.css) --- */
+
+/* Reusing .content-wrapper and .container from base styles */
+
+/* --- Hero Section --- */
+.about-hero {
+    background: #193e1a; /* Deeper Green Fallback */
+    color: var(--white);
+    padding: 10rem 0; 
+    text-align: center;
+    /* Added minimum height to ensure the hero section is visible even if content is small */
+    min-height: 400px; 
+    
+    /* Use a darker gradient overlay for a richer, more professional look */
+    background-image: linear-gradient(to bottom, rgba(31, 66, 32, 0.75), rgba(16, 40, 17, 0.9)), 
+                      url('path/to/campus-image.jpg');
+    
+    /* Ensure the image covers the area and is centered */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Ensure it doesn't repeat if it doesn't cover */
+    margin-bottom: 3rem;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.2;
+    /* FIX: Added left/right padding to prevent text from overflowing or touching the viewport edge */
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* --- General Section Styles --- */
+.about-section {
+    padding: 3rem 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-family: var(--font-serif);
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.section-lead {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--gray-dark);
+}
+
+.two-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+/* Philosophy Card (Reused dashboard-card style) */
+.philosophy-card {
+    background-color: var(--gray-light);
+    border-left: 4px solid var(--gold);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.philosophy-card .card-title {
+    font-size: 1.5rem;
+    color: var(--forest-green);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--sage-green);
+}
+
+.check-list {
+    list-style: none;
+    padding: 0;
+}
+.check-list li {
+    padding: 0.5rem 0 0.5rem 2rem;
+    position: relative;
+    font-size: 1.05rem;
+    color: var(--gray-dark);
+}
+.check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--sage-green);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* --- Data Section (Greenwood by the Numbers) --- */
+.data-section {
+    background-color: var(--forest-green);
+    padding: 4rem 0;
+    color: var(--white);
+}
+
+.data-section .section-title {
+    color: var(--gold);
+    margin-bottom: 3rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    text-align: center;
+    /* Added subtle separation borders */
+    border-top: 1px solid rgba(255, 255, 255, 0.2); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1.5rem 0;
+}
+
+.stat-item {
+    padding: 1rem;
+    /* Vertical separator */
+    border-right: 1px solid rgba(255, 255, 255, 0.15); 
+}
+
+.stat-item:last-child {
+    border-right: none;
+}
+
+.stat-value {
+    display: block;
+    font-size: 3.5rem;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* --- Leadership Section --- */
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.leader-card {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--white); /* Ensure white background for shadow */
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Added subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.leader-card:hover {
+    transform: translateY(-5px); /* Added hover effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Placeholder for leader image/avatar */
+.leader-card::before {
+    content: "[Portrait]";
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: var(--sage-green);
+    color: var(--white);
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    line-height: 120px;
+    font-weight: 600;
+    border: 4px solid var(--white); /* Added white border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.leader-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--forest-green);
+    margin-bottom: 0.25rem;
+}
+
+.leader-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.leader-bio {
+    font-size: 0.95rem;
+    color: var(--gray-medium);
+}
+
+/* --- Call to Action (CTA) --- */
+.about-cta {
+    background-color: var(--sage-green);
+    padding: 4rem 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.cta-title {
+    font-size: 2.25rem;
+    font-family: var(--font-serif);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.cta-text {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Gold button styling */
+.btn-gold {
+    background-color: var(--gold);
+    color: var(--forest-green);
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+}
+.btn-gold:hover {
+    background-color: #f7d363; /* Lighter gold on hover */
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    .two-col-grid {
+        grid-template-columns: 1fr;
+    }
+    .leadership-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-hero {
+        padding: 5rem 1rem;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem 0;
+    }
+    .stat-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15); 
+    }
+    .stat-item:last-child {
+        border-bottom: none;
+    }
+    .leadership-grid {
+        grid-template-columns: 1fr;
+    }
+    .stat-value {
+        font-size: 3rem;
+    }
+    .leader-card::before {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+    }
+}

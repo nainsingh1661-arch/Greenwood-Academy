@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenwood Academy - Excellence in Education</title>
+    <meta name="description"
+        content="Greenwood Academy provides exceptional education fostering academic excellence, character development, and lifelong learning.">
+    <meta name="author" content="Greenwood Academy">
+
+    <meta property="og:title" content="Greenwood Academy - Excellence in Education">
+    <meta property="og:description"
+        content="Greenwood Academy provides exceptional education fostering academic excellence, character development, and lifelong learning.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <aside id="sidebar" class="sidebar">
+        <h4 class="sidebar-title">Quick Links</h4>
+        <div class="sidebar-links">
+            <a href="#admissions" class="sidebar-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 3h6v6" />
+                    <path d="M10 14L21 3" />
+                    <path d="M18 19H5a2 2 0 0 0-2 2V5a2 2 0 0 1 2-2h12" />
+                </svg>
+                Admissions Info
+            </a>
+            <a href="#campus-life" class="sidebar-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                Calendar & Events
+            </a>
+            <a href="#" class="sidebar-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                </svg>
+                Latest News
+            </a>
+        </div>
+
+        <h4 class="sidebar-title sidebar-title-announcement">Announcements</h4>
+        <div class="announcement-card">
+            <p><strong>Upcoming:</strong> Parent-Teacher Night on 15th Oct. RSVP required via portal.</p>
+        </div>
+    </aside>
+
+    <nav class="nav" id="mainNav">
+        <div class="nav-container">
+
+            <button class="nav-toggle-sidebar" id="sidebarToggle" aria-label="Toggle sidebar menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 50 50" width="30" height="30" fill="currentColor">
+                        <path
+                            d="M25 5c-6.6 0-12 5.4-12 12s5.4 12 12 12 12-5.4 12-12-5.4-12-12-12zm-3 20h6v-5h-6v5zm-5 0h4v-7h-4v7zm-5 0h4v-9h-4v9zm26 0h-4v-9h4v9zm5 0h-4v-7h4v7zm-5 0h-4v-5h4v5zM25 30v15c0 1.1-0.9 2-2 2h-1c-1.1 0-2-0.9-2-2v-3c0-1.1 0.9-2 2-2h2c1.1 0 2 0.9 2 2zm-7 1c0 1.1-0.9 2-2 2h-1c-1.1 0-2-0.9-2-2v-3c0-1.1 0.9-2 2-2h2c1.1 0 2 0.9 2 2zM32 31c0 1.1 0.9 2 2 2h1c1.1 0 2-0.9 2-2v-3c0-1.1-0.9-2-2-2h-2c-1.1 0-2 0.9-2 2zM25 10c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z" />
+                    </svg>
+                </span>
+                Greenwood Academy
+            </a>
+
+            <div class="nav-center-menu">
+                <div class="nav-menu" id="navMenu">
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="#academics" class="nav-link">Academics</a>
+                    <a href="#campus-life" class="nav-link">Campus Life</a>
+                    <a href="admissions.html" class="nav-link">Admissions</a>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-login">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+                        <polyline points="10 17 15 12 10 7" />
+                        <line x1="15" y1="12" x2="3" y2="12" />
+                    </svg>
+                    Portal Login
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content-wrapper" id="contentWrapper">
+
+        <section class="hero" id="hero-carousel">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h2 class="hero-welcome">Welcome to Greenwood Academy</h2>
+                        <h1 class="hero-title">Excellence in Education</h1>
+                        <p class="hero-subtitle">Empowering minds, nurturing character, and inspiring lifelong learners
+                            since 1985</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary">Schedule a Visit</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+                    <img src="src\assets\hero-campus.jpg"
+                        alt="Traditional university building with pillars and blue sky">
+                </div>
+
+                <div class="carousel-item">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h2 class="hero-welcome">Welcome to Greenwood Academy</h2>
+                        <h1 class="hero-title">A Place to Discover</h1>
+                        <p class="hero-subtitle">World-class facilities that support curiosity and collaboration.</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary">View Facilities</button>
+                            <button class="btn btn-secondary">Admissions Guide</button>
+                        </div>
+                    </div>
+                    <img src="src\assets\campus-life.jpg" alt="Students studying in a large, well-lit library">
+                </div>
+
+                <div class="carousel-item">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h2 class="hero-welcome">Welcome to Greenwood Academy</h2>
+                        <h1 class="hero-title">Vibrant Campus Life</h1>
+                        <p class="hero-subtitle">Building teamwork, discipline, and healthy habits beyond the classroom.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary">Explore Sports</button>
+                            <button class="btn btn-secondary">Clubs & Activities</button>
+                        </div>
+                    </div>
+                    <img src="src\assets\academics.jpg" alt="Soccer player taking a shot on a green turf field">
+                </div>
+            </div>
+
+            <button class="carousel-control prev" aria-label="Previous image">❮</button>
+            <button class="carousel-control next" aria-label="Next image">❯</button>
+
+            <div class="scroll-indicator">
+                <div class="scroll-indicator-inner"></div>
+            </div>
+        </section>
+
+        <section id="about" class="section section-muted">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Mission</h2>
+                    <p class="section-description">
+                        At Greenwood Academy, we believe in nurturing the whole child—academically,
+                        socially, and emotionally. Our mission is to provide an exceptional educational
+                        experience that prepares students not just for college, but for life.
+                    </p>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Academic Excellence</h3>
+                        <p class="card-text">Rigorous curriculum designed to challenge and inspire every student</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Supportive Community</h3>
+                        <p class="card-text">Fostering a supportive environment where every voice is heard</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Lifelong Learning</h3>
+                        <p class="card-text">Cultivating curiosity and a passion for continuous growth</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="6" />
+                                <circle cx="12" cy="12" r="2" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Character Development</h3>
+                        <p class="card-text">Building integrity, empathy, and leadership skills</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="academics" class="section">
+            <div class="container">
+                <div class="two-column">
+                    <div class="image-column">
+                        <img src="src\assets\academics.jpg"
+                            alt="Students conducting an experiment in a modern science laboratory"
+                            class="rounded-image">
+                    </div>
+
+                    <div class="content-column">
+                        <h2 class="section-title">Academic Programs</h2>
+                        <p class="section-text">
+                            Our comprehensive curriculum combines rigorous academics with innovative
+                            teaching methods, ensuring every student reaches their full potential.
+                        </p>
+
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                        <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="feature-title">College Preparatory</h3>
+                                    <p class="feature-text">Advanced curriculum preparing students for top universities
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                                        <polyline points="14 2 14 8 20 8" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="feature-title">STEM Excellence</h3>
+                                    <p class="feature-text">State-of-the-art labs and innovative science programs</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                        <circle cx="8.5" cy="8.5" r="1.5" />
+                                        <polyline points="21 15 16 10 5 21" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="feature-title">Arts & Humanities</h3>
+                                    <p class="feature-text">Comprehensive fine arts and liberal arts education</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <line x1="2" y1="12" x2="22" y2="12" />
+                                        <path
+                                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="feature-title">Global Studies</h3>
+                                    <p class="feature-text">International perspectives and language immersion programs
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="campus-life" class="section section-muted">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Campus Life</h2>
+                    <p class="section-description">
+                        Beyond the classroom, students thrive in a vibrant community of clubs,
+                        sports, and activities that develop leadership and lifelong friendships.
+                    </p>
+                </div>
+
+                <div class="campus-image">
+                    <img src="src\assets\campus-life.jpg"
+                        alt="Diverse group of students collaborating and smiling at a table" class="rounded-image">
+                </div>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon card-icon-accent">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2z" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Athletics</h3>
+                        <p class="card-text">18 varsity sports with championship teams and state-of-the-art facilities.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon card-icon-accent">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M9 18V5l12-2v13" />
+                                <circle cx="6" cy="18" r="3" />
+                                <circle cx="18" cy="16" r="3" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Performing Arts</h3>
+                        <p class="card-text">Award-winning music and dance programs in a dedicated recital hall.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon card-icon-accent">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6" />
+                                <line x1="2" y1="20" x2="2.01" y2="20" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Clubs & Societies</h3>
+                        <p class="card-text">Over 50 student-led clubs, from robotics to Model UN.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon card-icon-accent">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Community Service</h3>
+                        <p class="card-text">Instilling empathy through structured service learning opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="admissions" class="section section-primary">
+            <div class="container text-center">
+                <h2 class="section-title section-title-light">Join Our Community</h2>
+                <p class="section-description section-description-light">
+                    Discover how Greenwood Academy can help your child reach their full potential.
+                    Schedule a campus visit or start your application today.
+                </p>
+                <div class="admissions-buttons">
+                    <button class="btn btn-accent">Apply Now</button>
+                    <button class="btn btn-outline-light">Schedule Tour</button>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3 class="footer-title">
+                            <span class="logo-icon footer-logo-icon">
+                                <svg viewBox="0 0 50 50" width="30" height="30" fill="currentColor">
+                                    <path
+                                        d="M25 5c-6.6 0-12 5.4-12 12s5.4 12 12 12 12-5.4 12-12-5.4-12-12-12zm-3 20h6v-5h-6v5zm-5 0h4v-7h-4v7zm-5 0h4v-9h-4v9zm26 0h-4v-9h4v9zm5 0h-4v-7h4v7zm-5 0h-4v-5h4v5zM25 30v15c0 1.1-0.9 2-2 2h-1c-1.1 0-2-0.9-2-2v-3c0-1.1 0.9-2 2-2h2c1.1 0 2 0.9 2 2zm-7 1c0 1.1-0.9 2-2 2h-1c-1.1 0-2-0.9-2-2v-3c0-1.1 0.9-2 2-2h2c1.1 0 2 0.9 2 2zM32 31c0 1.1 0.9 2 2 2h1c1.1 0 2-0.9 2-2v-3c0-1.1-0.9-2-2-2h-2c-1.1 0-2 0.9-2 2zM25 10c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z" />
+                                </svg>
+                            </span>
+                            Greenwood Academy
+                        </h3>
+                        <p class="footer-text">Excellence in Education Since 1985</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none"
+                                        stroke="currentColor" stroke-width="2" />
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor"
+                                        stroke-width="2" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#academics">Academics</a></li>
+                            <li><a href="#campus-life">Campus Life</a></li>
+                            <li><a href="#admissions">Admissions</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Parent Portal</a></li>
+                            <li><a href="#">Student Portal</a></li>
+                            <li><a href="#">Calendar</a></li>
+                            <li><a href="#">News & Events</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Contact</h4>
+                        <address class="footer-address">
+                            <p>123 Academy Drive</p>
+                            <p>Greenwood, Kota 12345</p>
+                            <p>Phone: (+91) 123-4567</p>
+                            <p>Email: info@greenwood.edu</p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Greenwood Academy. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

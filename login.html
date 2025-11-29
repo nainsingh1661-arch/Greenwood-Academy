@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenwood Academy - Portal Login</title>
+    <meta name="description" content="Login portal for Greenwood Academy students, teachers, and administration.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="login.css"> 
+</head>
+
+<body class="login-page-body">
+
+    <nav class="nav" id="mainNav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 50 50" width="30" height="30" fill="currentColor">
+                        <path
+                            d="M25 5c-6.6 0-12 5.4-12 12s5.4 12 12 12 12-5.4 12-12-5.4-12-12-12zm-3 20h6v-5h-6v5zm-5 0h4v-7h-4v7zm-5 0h4v-9h-4v9zm26 0h-4v-9h4v9zm5 0h-4v-7h4v7zm-5 0h-4v-5h4v5zM25 30v15c0 1.1-0.9 2-2 2h-1c-1.1 0-2-0.9-2-2v-3c0-1.1 0.9-2 2-2h2c1.1 0 2 0.9 2 2zm-7 1c0 1.1-0.9 2-2 2h-1c-1.1 0-2-0.9-2-2v-3c0-1.1 0.9-2 2-2h2c1.1 0 2 0.9 2 2zM32 31c0 1.1 0.9 2 2 2h1c1.1 0 2-0.9 2-2v-3c0-1.1-0.9-2-2-2h-2c-1.1 0-2 0.9-2 2zM25 10c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z" />
+                    </svg>
+                </span>
+                Greenwood Academy
+            </a>
+
+            <div class="nav-center-menu">
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Back to Home</a>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <a href="admissions.html" class="btn btn-login">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+                        <polyline points="10 17 15 12 10 7" />
+                        <line x1="15" y1="12" x2="3" y2="12" />
+                    </svg>
+                    Admissions
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="login-main">
+        <div class="login-card">
+            <h1 class="login-title">Portal Login</h1>
+            <p class="login-subtitle">Access your resources based on your role.</p>
+
+            <div class="login-tabs" id="loginTabs">
+                <button class="tab-button active" data-target="student-form">Student</button>
+                <button class="tab-button" data-target="teacher-form">Teacher</button>
+                <button class="tab-button" data-target="admin-form">Admin</button>
+            </div>
+
+            <div class="login-forms">
+                <form id="student-form" class="login-form active">
+                    <h2 class="form-heading">Student Login</h2>
+                    <div class="form-group">
+                        <label for="student-id">Student ID / Username</label>
+                        <input type="text" id="student-id" name="student-id" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="student-password">Password</label>
+                        <input type="password" id="student-password" name="student-password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary login-button">Log In as Student</button>
+                    <a href="#" class="forgot-password">Forgot Student ID or Password?</a>
+                </form>
+
+                <form id="teacher-form" class="login-form">
+                    <h2 class="form-heading">Teacher Login</h2>
+                    <div class="form-group">
+                        <label for="teacher-email">Staff Email</label>
+                        <input type="email" id="teacher-email" name="teacher-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="teacher-password">Password</label>
+                        <input type="password" id="teacher-password" name="teacher-password" required>
+                    </div>
+                    <div class="form-group-options">
+                        <label class="checkbox-container">
+                            Remember Me
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary login-button">Log In as Teacher</button>
+                    <a href="#" class="forgot-password">Need help with Teacher Portal access?</a>
+                </form>
+
+                <form id="admin-form" class="login-form">
+                    <h2 class="form-heading">Administration Login</h2>
+                    <div class="form-group">
+                        <label for="admin-user">Admin Username</label>
+                        <input type="text" id="admin-user" name="admin-user" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="admin-key">Security Key / Password</label>
+                        <input type="password" id="admin-key" name="admin-key" required>
+                    </div>
+                    <div class="form-group-options">
+                        <label class="checkbox-container">
+                            Two-Factor Authentication
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary login-button">Log In as Admin</button>
+                    <a href="#" class="forgot-password">Contact IT Support for Admin access.</a>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">
+                        <span class="logo-icon footer-logo-icon">
+                            <svg viewBox="0 0 50 50" width="30" height="30" fill="currentColor">
+                                <path
+                                    d="M25 5c-6.6 0-12 5.4-12 12s5.4 12 12 12 12-5.4 12-12-5.4-12-12-12zm-3 20h6v-5h-6v5zm-5 0h4v-7h-4v7zm-5 0h4v-9h-4v9zm26 0h-4v-9h4v9zm5 0h-4v-7h4v7zm-5 0h-4v-5h4v5zM25 30v15c0 1.1-0.9 2-2 2h-1c-1.1 0-2-0.9-2-2v-3c0-1.1 0.9-2 2-2h2c1.1 0 2 0.9 2 2zm-7 1c0 1.1-0.9 2-2 2h-1c-1.1 0-2-0.9-2-2v-3c0-1.1 0.9-2 2-2h2c1.1 0 2 0.9 2 2zM32 31c0 1.1 0.9 2 2 2h1c1.1 0 2-0.9 2-2v-3c0-1.1-0.9-2-2-2h-2c-1.1 0-2 0.9-2 2zM25 10c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z" />
+                            </svg>
+                        </span>
+                        Greenwood Academy
+                    </h3>
+                    <p class="footer-text">Excellence in Education Since 1985</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none"
+                                    stroke="currentColor" stroke-width="2" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor"
+                                    stroke-width="2" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#academics">Academics</a></li>
+                        <li><a href="index.html#campus-life">Campus Life</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Parent Portal</a></li>
+                        <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">Calendar</a></li>
+                        <li><a href="#">News & Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact</h4>
+                    <address class="footer-address">
+                        <p>123 Academy Drive</p>
+                        <p>Greenwood, Kota 12345</p>
+                            <p>Phone: (+91) 123-4567</p>
+                        <p>Email: info@greenwood.edu</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Greenwood Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="login.js"></script>
+</body>
+
+</html>
